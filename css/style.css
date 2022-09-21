@@ -10,7 +10,7 @@
     background-color: orangered;
     height: 70px;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
 	top: 0;
 	right: 0;
 	left: 0;
@@ -68,11 +68,30 @@ main{
 .container-img{
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    margin: 10px;
     width: calc(90% / 3);
     position: relative;
 }
 
+span{
+    z-index: 4;
+}
+
+.img1{
+    z-index: 1;
+}
+
+.img1b{
+    position: absolute;
+    z-index: 3;
+    opacity: 0%; 
+    width:100%;   
+}
+
+.img1b:hover{
+    opacity: 100%;
+    
+}
 
 .march-product{
     color: gray;
@@ -95,21 +114,33 @@ main{
 .sconto{
     position: absolute;
     background-color: red;
-    top: 680px;
+    top: 690px;
     padding: 7px 16px;
     color: white;
     font-weight: 700;
 }
 
+.cuoricino{
+    position: absolute;
+    background-color: white;
+    right: 0;
+    top: 15px;
+    padding: 5px 18px;
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
+}
+
 .sostenibilità{
     position: absolute;
     background-color: green;
-    top: 680px;
-    left: 90px;
+    top: 690px;
+    left: 75px;
     padding: 7px 16px;
     color: white;
     font-weight: 700;
 }
+
 
 
 
