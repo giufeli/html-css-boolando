@@ -6,7 +6,7 @@
 }
 
 .container-nav{
-    background-color: orangered;
+    background-color: rgba(255,105,0,255);
     height: 70px;
     position: fixed;
     z-index: 5;
@@ -45,6 +45,10 @@ a{
     max-height: 30px; 
 }
 
+#user {
+    color: white;
+}
+
 main{
     z-index: 0;
 }
@@ -71,6 +75,11 @@ main{
     margin: 20px;
     width: calc(90% / 3);
     position: relative;
+}
+
+.prezzo2{
+    color: black;
+    text-decoration: line-through;
 }
 
 span{
@@ -145,12 +154,22 @@ span{
     font-weight: 700;
 }
 
+#sostenibilità2{
+    position: absolute;
+    background-color: green;
+    top: 585px;
+    left: 0px;
+    padding: 7px 16px;
+    color: white;
+    font-weight: 700;
+}
+
 .container-footer{
     background-color: rgba(26,26,26,255);
-    height: 170px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 60px;
     padding-top: 20px;
 }
 
