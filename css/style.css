@@ -21,13 +21,20 @@
 
 .nav-ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 20px;
     font-weight: 700;
 }
 
-li{
+.nav-ul ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-ul li{
     list-style: none;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 a{
@@ -37,38 +44,34 @@ a{
 
 .nav-logo{
     max-height: 30px;
-    padding-left: 500px;
-    padding-right: 500px;
+    
 }
 
 main{
-    height: 5000px;
     z-index: 0;
 }
 
 .container-main{
-    background-color: aquamarine;
-    width: 1800px;
+    padding-bottom: 130px;
+    width: 1500px;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 120px;
     
 }
 
 .container-prodotti{
-    background-color: blue;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    padding-top: 120px;
-     
 }
 
 .container-img{
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 20px;
     width: calc(90% / 3);
     position: relative;
 }
@@ -77,18 +80,18 @@ span{
     z-index: 4;
 }
 
-.img1{
+.img-static{
     z-index: 1;
 }
 
-.img1b{
+.imgb{
     position: absolute;
     z-index: 3;
     opacity: 0%; 
     width:100%;   
 }
 
-.img1b:hover{
+.imgb:hover{
     opacity: 100%;
     
 }
@@ -114,7 +117,7 @@ span{
 .sconto{
     position: absolute;
     background-color: red;
-    top: 690px;
+    top: 585px;
     padding: 7px 16px;
     color: white;
     font-weight: 700;
@@ -131,16 +134,56 @@ span{
     font-size: 40px;
 }
 
+.cuoricino:hover{
+    color: red;
+}
+
 .sostenibilità{
     position: absolute;
     background-color: green;
-    top: 690px;
+    top: 585px;
     left: 75px;
     padding: 7px 16px;
     color: white;
     font-weight: 700;
 }
 
+.container-footer{
+    background-color: rgba(26,26,26,255);
+    height: 170px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
 
+
+
+.lista-info ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lista-info li{
+    list-style: none;
+    font-weight: 400;
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+ .boolando{
+    font-weight: 700;
+    color: white;
+ }
+
+.info{
+    margin-left: 200px;
+}
+
+.social{
+    margin-right: 200px;
+}
 
 
